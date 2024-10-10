@@ -38,6 +38,6 @@ TESTCASE(InnerMember,      &Class::Inner::member, "member")
 TESTCASE(InnerMethod,      &Class::Inner::method, "method")
 TESTCASE(MethodPtr,        &Class::Inner::methodptr, "methodptr")
 TESTCASE(Template,         Class::Template<wchar_t>, "Template")
-TESTCASE(TemplateMethod,   &Class::Template<wchar_t>::method, "method");
+TESTCASE(TemplateMethod,   &Class::Template<wchar_t>::method, "method")
 TESTCASE(TemplateFunction, &Class::Template<wchar_t>::function<std::string>, "function")
 TESTCASE(MethodPtrMember,  &Class::Template<wchar_t>::methodptr, "methodptr")
