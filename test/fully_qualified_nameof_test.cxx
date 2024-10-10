@@ -38,7 +38,7 @@ TESTCASE(FullInnerMember,      &Class::Inner::member, "NameSpace::Class::Inner::
 TESTCASE(FullInnerMethod,      &Class::Inner::method, "NameSpace::Class::Inner::method")
 TESTCASE(FullMethodPtr,        &Class::Inner::methodptr, "NameSpace::Class::Inner::methodptr")
 TESTCASE(FullTemplate,         Class::Template<wchar_t>, "NameSpace::Class::Template<wchar_t>")
-TESTCASE(FullTemplateMethod,   &Class::Template<wchar_t>::method, "NameSpace::Class::Template<wchar_t>::method");
+TESTCASE(FullTemplateMethod,   &Class::Template<wchar_t>::method, "NameSpace::Class::Template<wchar_t>::method")
 TESTCASE(FullTemplateFunction, &Class::Template<wchar_t>::function<std::string>, "NameSpace::Class::Template<wchar_t>::function")
 TESTCASE(FullMethodPtrMember,  &Class::Template<wchar_t>::methodptr, "NameSpace::Class::Template<wchar_t>::methodptr")
 
