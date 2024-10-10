@@ -19,4 +19,4 @@ jobs:
     - name: install dependencies
       run: sudo apt-get update && apt-cache search clang- && sudo apt-get install -y libgtest-dev ${{ matrix.cxx }}
     - name: run tests
-      run: make -C test -j$(nproc) CXX=${{ matrix.cxx }} STD=${{ matrix.cxx }} run-tests 
+      run: make -C test -j$(nproc) CXX=${{ matrix.cxx }} STD=${{ matrix.std }} run-tests 
