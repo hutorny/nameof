@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: install dependencies
-      run: sudo apt-get update && sudo apt-get install -y libgtest-dev
+      run: sudo apt-get update && sudo apt-get install -y libgtest-dev ${{ matrix.cxx }}
     - name: build tests
       run: make -C test -j$(nproc) CXX=${{ matrix.cxx }} STD=${{ matrix.std }}  
     - name: run tests
